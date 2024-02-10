@@ -5,20 +5,20 @@
 class Tfrbac < Formula
   desc ""
   homepage ""
-  version "0.0.25"
+  version "0.0.26"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.25/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "2ed458b9f8be437b3a73ab2c5cbbc44714190cb771506a4ac0fb9c29cb638146"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.26/tfrbac_Darwin_arm64.tar.gz"
+      sha256 "0f099eec8c549a290f409a01ca88359fe5a51eceac8eac8fd7592759792a6817"
 
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.25/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "eeb3e05a8dd2ee0693e41fc9c6ce78cca2e5bb11756691ba0016972b0c344de1"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.26/tfrbac_Darwin_x86_64.tar.gz"
+      sha256 "fe63592c0a693201d9a5c4beadf2dbf6162339f12e5bcb82ec3af235ddcee052"
 
       def install
         bin.install "tfrbac"
@@ -28,16 +28,16 @@ class Tfrbac < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.25/tfrbac_Linux_arm64.tar.gz"
-      sha256 "c8af87aeb27b8f40accf754f6aef0b9a64490e1d96185db360e9eee7e93a56c5"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.26/tfrbac_Linux_arm64.tar.gz"
+      sha256 "0eddb406e1e05f30dbfc938f23ed70d20133516bc3d47c9721b487d4093e4a55"
 
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.25/tfrbac_Linux_x86_64.tar.gz"
-      sha256 "77e021bf1d6c2bb58aed0e6c89e8e6f1a5dc0a8f63b3845e18c76ae896823e63"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.26/tfrbac_Linux_x86_64.tar.gz"
+      sha256 "42b82e18477f40f140248d47e3af49f5cfa433b65d915058c235c09284773e64"
 
       def install
         bin.install "tfrbac"
