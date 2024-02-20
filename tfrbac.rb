@@ -5,20 +5,20 @@
 class Tfrbac < Formula
   desc ""
   homepage ""
-  version "0.0.37"
+  version "0.0.38"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.37/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "f8862812031cfd2662a2d23d3e05869046c61a24c52c94ce7e316385d62f32ac"
+    if Hardware::CPU.arm?
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.38/tfrbac_Darwin_arm64.tar.gz"
+      sha256 "ada158ef1a0b326295cb9c8b14d68890f58923fb8c8ca752cfd374d862655d1b"
 
       def install
         bin.install "tfrbac"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.37/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "9c6fadb616bd7866884f88452c2684061bb9f5b2d6aecb4024479d56bfb206f8"
+    if Hardware::CPU.intel?
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.38/tfrbac_Darwin_x86_64.tar.gz"
+      sha256 "b3bb70ba0f76ceeb5e39717d74814fedce230679ba1bba73e715313cf6b3a13f"
 
       def install
         bin.install "tfrbac"
@@ -28,16 +28,16 @@ class Tfrbac < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.37/tfrbac_Linux_arm64.tar.gz"
-      sha256 "0c5415f9a607fb28ec0e6e2eee21e157e220da4e58138c52473d134ebcd1d07a"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.38/tfrbac_Linux_arm64.tar.gz"
+      sha256 "223f73104984492325691d3ff2f7f581dfd9fbddef438dacfe365996265bb6e5"
 
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.37/tfrbac_Linux_x86_64.tar.gz"
-      sha256 "0ddf7b17478fb79af76aaff77ac0dde1b2c2b1714105e188049a869af7c99d1f"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.0.38/tfrbac_Linux_x86_64.tar.gz"
+      sha256 "d80df19dd7a2d303d38865ff37a98c4bbe8f761583b9932e3d8dae8013e6dae9"
 
       def install
         bin.install "tfrbac"
