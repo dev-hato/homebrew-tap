@@ -5,20 +5,20 @@
 class Tfrbac < Formula
   desc ""
   homepage ""
-  version "0.1.119"
+  version "0.1.120"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.119/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "5a78cf02830b4ff438b9fee26664ba653affca614bed8cfe1469b630b8381960"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.120/tfrbac_Darwin_x86_64.tar.gz"
+      sha256 "85ce91217f69f6034d3e80b1fcf496c78b90e674019cc35558774c72d9d85817"
 
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.119/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "e52a53deb72aedab9484eb0009bad62064beff683ba7c49c1bedbaf5baee9c5d"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.120/tfrbac_Darwin_arm64.tar.gz"
+      sha256 "604faf8d1166d3e377842b7d909594802fa2d7c64333e7474d0024e63f024794"
 
       def install
         bin.install "tfrbac"
@@ -29,8 +29,8 @@ class Tfrbac < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.119/tfrbac_Linux_x86_64.tar.gz"
-        sha256 "6f518a7489fbffb53741e60c320504e389924fb20ca7bb6e67dfff1ab26f51fc"
+        url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.120/tfrbac_Linux_x86_64.tar.gz"
+        sha256 "56ded5970cf9d557cc5a163108f37b9e8ae6b87b75f4a4be6c9dbde1d36e19f2"
 
         def install
           bin.install "tfrbac"
@@ -39,8 +39,8 @@ class Tfrbac < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.119/tfrbac_Linux_arm64.tar.gz"
-        sha256 "ec0957737b0cce19bae2ff3d8d4da0f8a9f461ea8f9d6b7a9a909079de69a7e5"
+        url "https://github.com/dev-hato/tfrbac/releases/download/v0.1.120/tfrbac_Linux_arm64.tar.gz"
+        sha256 "239703ec18422a8a982ada3ce43b8ee7ac1740caf61f69e9912e8818dce27c3f"
 
         def install
           bin.install "tfrbac"
