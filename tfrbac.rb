@@ -5,20 +5,20 @@
 class Tfrbac < Formula
   desc ""
   homepage ""
-  version "1.0.39"
+  version "1.0.40"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.39/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "a4d3bf9c009aefd9491d3300e61f8df29366178151d790591fd4a5bb070c98f2"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.40/tfrbac_Darwin_x86_64.tar.gz"
+      sha256 "448c97b4802edb29843bffb6732b99d7a7dbebe96b6deb21c83dbf142400f267"
 
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.39/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "fade38ee45c2d81913e9aa2933e9209a6fd7f79f451c9c88c452febb160dc3b9"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.40/tfrbac_Darwin_arm64.tar.gz"
+      sha256 "50f7e8679ff24aa6b7cd7035fb8a6ecc097a7c392dc5922cffcb0f7badf9c644"
 
       def install
         bin.install "tfrbac"
@@ -28,15 +28,15 @@ class Tfrbac < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.39/tfrbac_Linux_x86_64.tar.gz"
-      sha256 "a241175e1a2ba681fdf4431f5e3de06b74e1b695f78fb383af5fd69befb3db37"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.40/tfrbac_Linux_x86_64.tar.gz"
+      sha256 "c7a1a49a0185d77ba4d39ea8e92508003cf5a1c7fcf8c57f0381f6f4db42ff44"
       def install
         bin.install "tfrbac"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.39/tfrbac_Linux_arm64.tar.gz"
-      sha256 "12670cf5a82747d1fe776d2e49f248ff9b3eb1e8dc08beabe4a616d1b1dfe6d1"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.40/tfrbac_Linux_arm64.tar.gz"
+      sha256 "6376f1112decadda8f3ccb172af838994d18d55678ff54360e27f65be3c53774"
       def install
         bin.install "tfrbac"
       end
