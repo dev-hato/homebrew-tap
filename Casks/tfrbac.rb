@@ -2,7 +2,7 @@
 cask "tfrbac" do
   desc ""
   homepage ""
-  version "1.0.47"
+  version "1.0.48"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "tfrbac" do
 
   on_macos do
     on_intel do
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.47/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "3e12c1ea18d610e977149749f953dd240a7a926e965e1eef09651fda45351651"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.48/tfrbac_Darwin_x86_64.tar.gz"
+      sha256 "f8feeb2666c73b8350aef96f53cf10bc9841f8537f2b667c6550121ddf0e8267"
     end
     on_arm do
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.47/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "afa60963065d62e853176a50458d0f465d76d45de633182ce68f32f69c0ba8f4"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.48/tfrbac_Darwin_arm64.tar.gz"
+      sha256 "d9365c061c7adb3ce2f074568de7d1c119a7f008d2352e1098c30db41df41481"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.47/tfrbac_Linux_x86_64.tar.gz"
-      sha256 "91307b81294169567b1073c960c14ecc9da6f3cdda2ee7906c6bd908f88b743f"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.48/tfrbac_Linux_x86_64.tar.gz"
+      sha256 "ec8d3a358314966e3705cc538b4489c7d1ce436a95ba8b4d437b4add713208a3"
     end
     on_arm do
-      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.47/tfrbac_Linux_arm64.tar.gz"
-      sha256 "8fe53bd6372a966e8013df0bfcf965ae9bbda774fb37f220bd7ec27af711f25a"
+      url "https://github.com/dev-hato/tfrbac/releases/download/v1.0.48/tfrbac_Linux_arm64.tar.gz"
+      sha256 "4395948f2b7431e88acbc4edd3153b63cd3dd0f62ac0131a2d2e9d75d2170468"
     end
   end
 
