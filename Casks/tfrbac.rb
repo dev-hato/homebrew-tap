@@ -3,7 +3,7 @@ cask "tfrbac" do
   name "tfrbac"
   desc ""
   homepage ""
-  version "1.0.106"
+  version "1.0.107"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "tfrbac" do
   on_macos do
     on_intel do
       url "https://github.com/dev-hato/tfrbac/releases/download/v#{version}/tfrbac_Darwin_x86_64.tar.gz"
-      sha256 "a6ce1a47fef4de75e7f747b9ddf62d28a58b4ffa1cb9c7fcebde5c4a318797ce"
+      sha256 "f259db1227d785fdcef9b61acac4ebc77f71da4c403e0b0cd5b72531de353929"
     end
     on_arm do
       url "https://github.com/dev-hato/tfrbac/releases/download/v#{version}/tfrbac_Darwin_arm64.tar.gz"
-      sha256 "c6146d5ebf5ba59f70eaf7cdc12cc3623e314cbd79e0b78e0b66e47caab86ddb"
+      sha256 "46657c4ae29e681a8b8ef5d55a9a694749f3e5560fcc3f52707882a7d9985041"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/dev-hato/tfrbac/releases/download/v#{version}/tfrbac_Linux_x86_64.tar.gz"
-      sha256 "320a8809a39302de06f4706f456acf665316662f57560aceeba7d65831f39b96"
+      sha256 "ec7761854d196b386d8cad989b464b73c283224c840983f0959afa39408bd5b4"
     end
     on_arm do
       url "https://github.com/dev-hato/tfrbac/releases/download/v#{version}/tfrbac_Linux_arm64.tar.gz"
-      sha256 "11e8f220b48dd9f58d9ef19e02db4f34f21ce25f4e193542a00ac96bb8966414"
+      sha256 "aaa1c21e1109f98ec2a977bab126b4c0a39300b720ea350e9d373e58739c1b16"
     end
   end
 
